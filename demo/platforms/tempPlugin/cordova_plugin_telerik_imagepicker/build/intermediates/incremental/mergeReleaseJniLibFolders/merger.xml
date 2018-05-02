@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\release\jniLibs"/></dataSet></merger>

@@ -1,0 +1,61 @@
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\e50e594e07754dbf334df30090e4db45\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\baa473d645e51afaaa173fa6900817ab\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\3c4090b392136904865c577657f328b6\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\704e9233e29e8b477239af82be8ffada\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\nativescript-optimized.aar\6ff75f0342748afadc4c66308021cb37\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\cordova_nativescript_plugin.aar\9076d8737e6e894862f65320c0cfd4dd\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\cordova_plugin_email_composer.aar\f3f7cff23870488ae26deb3b9db91940\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\cordova_plugin_telerik_imagepicker.aar\60288fcabf6d483fe09c3d1c66115f62\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\c528354f75d4a8672af304378d49910c\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\0f624e8747b6a293f35334f26c253a2e\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\a830c898fb0d515e919ca38a90d1bb1e\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\9c028f7f4b00561f807a9172ac06134b\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\413b84d4bfbf6b7f71903f1b87610846\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\ea6f96aa1dfe3a7683b4739f374acd86\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\512e88b8259e0450d62c253730e13886\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\aef8b34b71ebd770c2cbb7b694457d7d\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\3981b8f757c90d3cb42624c0355b0a2b\jars\classes.jar'(**.class)
+-injars 'C:\Users\kerezov\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c259025a4744d6e59a8f937ddf868698\jars\classes.jar'(**.class)
+-injars 'D:\android-sdks\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar'(**.class)
+-injars 'C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\android\app\build\intermediates\classes\debug'(**.class)
+-outjars 'C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\android\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'D:\android-sdks\build-tools\27.0.3\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\android\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+# Referenced at C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:27
+-keep class com.tns.NativeScriptApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}

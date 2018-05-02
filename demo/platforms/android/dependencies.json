@@ -1,0 +1,26 @@
+[
+    {
+        "name": "cordova-nativescript-plugin",
+        "directory": "..\\..\\node_modules\\cordova-nativescript-plugin"
+    },
+    {
+        "name": "cordova-plugin-email-composer",
+        "directory": "..\\..\\node_modules\\cordova-plugin-email-composer"
+    },
+    {
+        "name": "cordova-plugin-telerik-imagepicker",
+        "directory": "..\\..\\node_modules\\cordova-plugin-telerik-imagepicker"
+    },
+    {
+        "name": "nativescript-theme-core",
+        "directory": "..\\..\\node_modules\\nativescript-theme-core"
+    },
+    {
+        "name": "tns-core-modules",
+        "directory": "..\\..\\node_modules\\tns-core-modules"
+    },
+    {
+        "name": "tns-core-modules-widgets",
+        "directory": "..\\..\\node_modules\\tns-core-modules-widgets"
+    }
+]

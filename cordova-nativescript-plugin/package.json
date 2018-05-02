@@ -20,7 +20,7 @@
     "hooks": [
       {
         "type": "before-prepare",
-        "script": "before-prepare.js",
+        "script": "./lib/hooks/before-prepare.js",
         "inject": true
       }
     ]
@@ -29,6 +29,8 @@
     "fs-extra": "^5.0.0",
     "mkdirp": "^0.5.1",
     "nativescript-hook": "0.2.0",
-    "xml-js": "1.6.2"
+    "xml-js": "1.6.2",
+    "xmldom": "0.1.27",
+    "xpath": "0.0.27"
   }
 }

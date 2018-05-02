@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:70-131
+		INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+		INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+		INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:1-8:12
+		INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:3:3-78
+	android:name
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:3:20-76
+application
+ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:5:3-7:17
+activity#com.synconset.MultiImageChooserActivity
+ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:6:5-155
+	android:label
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:6:15-53
+	android:theme
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:6:109-153
+	android:name
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml:6:54-108
+uses-sdk
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+		ADDED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml
+		INJECTED from C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\tempPlugin\cordova_plugin_telerik_imagepicker\src\main\AndroidManifest.xml

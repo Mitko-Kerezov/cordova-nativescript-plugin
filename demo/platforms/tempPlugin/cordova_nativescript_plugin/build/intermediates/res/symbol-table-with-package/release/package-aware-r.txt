@@ -1,0 +1,1 @@
+org.nativescript.cordova_nativescript_plugin

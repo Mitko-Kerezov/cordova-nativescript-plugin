@@ -1,0 +1,1 @@
+C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\android\app/src/main/assets/app

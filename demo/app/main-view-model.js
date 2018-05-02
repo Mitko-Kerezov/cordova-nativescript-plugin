@@ -1,9 +1,10 @@
 var Observable = require("data/observable").Observable;
 var application = require("application");
-
+var baseRequire = require;
 /**
  * Start cordova
  */
+var fs = require("file-system");
 
 /*global cordova,window,console*/
 /**
@@ -372,7 +373,6 @@ var application = require("application");
 
         module.exports = {
             exec: function (bridgeSecret, service, action, callbackId, argsJson) {
-                debugger;
                 return prompt(argsJson, 'gap:' + JSON.stringify([bridgeSecret, service, action, callbackId]));
             },
             setNativeToJsBridgeMode: function (bridgeSecret, value) {
@@ -915,7 +915,21 @@ var application = require("application");
         var cordova = require('cordova');
         var utils = require('cordova/utils');
 
-        const pluginMng = new org.apache.cordova.CordovaPluginManager()
+        const features = baseRequire("cordova-nativescript-plugin/cordova_features.json");
+        const javaMap = new java.util.HashMap();
+        for (featureName in features) {
+            javaMap.put(featureName, features[featureName]);
+        }
+        // const pluginsMap = plugin_list.forEach(p => {
+        //     const pluginIdParts = p.id.split(".");
+        //     // return {
+        //     //     fullName: p.id,
+        //     //     serviceName: pluginIdParts[pluginIdParts.length - 1]
+        //     // }
+        //     javaMap.put(pluginIdParts[pluginIdParts.length - 1], p.id);
+        // });
+
+        const pluginMng = new org.apache.cordova.CordovaPluginManager(javaMap);
         application.android.on(application.AndroidApplication.activityResultEvent, function (args) {
             console.log("Event: " + args.eventName + ", Activity: " + args.activity +
                 ", requestCode: " + args.requestCode + ", resultCode: " + args.resultCode + ", Intent: " + args.intent);
@@ -1172,7 +1186,6 @@ var application = require("application");
 
     // file: src/common/init.js
     define("cordova/init", function (require, exports, module) {
-        debugger;
         var channel = require('cordova/channel');
         var cordova = require('cordova');
         var modulemapper = require('cordova/modulemapper');
@@ -1268,7 +1281,6 @@ var application = require("application");
 
         // Wrap in a setTimeout to support the use-case of having plugin JS appended to cordova.js.
         // The delay allows the attached modules to be defined before the plugin loader looks for them.
-        debugger;
         setTimeout(function () {
             pluginloader.load(function () {
                 channel.onPluginsReady.fire();
@@ -1393,7 +1405,6 @@ var application = require("application");
 
         // Wrap in a setTimeout to support the use-case of having plugin JS appended to cordova.js.
         // The delay allows the attached modules to be defined before the plugin loader looks for them.
-        debugger;
         setTimeout(function () {
             pluginloader.load(function () {
                 channel.onPluginsReady.fire();
@@ -1829,7 +1840,6 @@ var application = require("application");
         // Helper function to inject a <script> tag.
         // Exported for testing.
         exports.injectScript = function (url, onload, onerror) {
-            debugger;
             // TODO: fix the cordova-plugin.js path
             global.require(url)
             onload()
@@ -1925,8 +1935,6 @@ var application = require("application");
         // This is an async process, but onDeviceReady is blocked on onPluginsReady.
         // onPluginsReady is fired when there are no plugins to load, or they are all done.
         exports.load = function (callback) {
-            debugger;
-
             var pathPrefix = findCordovaPath();
             if (pathPrefix === null) {
                 console.log('Could not find cordova.js script tag. Plugin loading may fail.');
@@ -2215,9 +2223,38 @@ function createViewModel(args) {
             console.log('Error: ' + error);
         }
 
-        const ip = cordova.require("com.synconset.imagepicker.ImagePicker");
-        // imagePicker.getPictures(success, fail);
+        const ip = cordova.require("com.synconset.imagepicker.ImagePicker").imagePicker;
         ip.getPictures(success, fail);
+        // ip.getPictures(success, fail);
+        // function onSuccess(imageURI) {
+        //     console.log("IMAGE URI", imageURI);
+        // }
+
+        // function onFail(message) {
+        //     alert('Failed because: ' + message);
+        // }
+
+        // console.log(global.Camera);
+        // const email = cordova.require("cordova-plugin-email-composer.EmailComposer");
+        // const emailCallback = message => {
+        //     console.log("sth happened");
+        //     console.log(message);
+        // }
+        // email.open({
+        //     to: ['person1@domain.com'],
+        //     cc: ['person2@domain.com'],
+        //     bcc: ['person3@domain.com', 'person4@domain.com'],
+        //     attachments: ['file://styles/images/logo.png', 'file://styles/images/logo2x.png'],
+        //     subject: 'EmailComposer plugin test',
+        //     body: '<h2>Hello!</h2>This is a nice <strong>HTML</strong> email with two attachments.',
+        //     isHtml: true
+        // }, emailCallback);
+        // console.log(cordova.require("cordova-plugin-camera.camera"));
+        // camera.getPicture(onSuccess, onFail, {
+        //     quality: 50,
+        //     destinationType: 1
+        // });
+
     }
 
     return viewModel;

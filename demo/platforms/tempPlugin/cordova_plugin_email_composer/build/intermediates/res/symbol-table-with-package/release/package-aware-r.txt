@@ -1,0 +1,2 @@
+org.nativescript.cordova_plugin_email_composer
+int xml emailcomposer_provider_paths 0x7f190001

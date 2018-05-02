@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\image_pop_in.xml",
+        "source": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\src\\main\\res\\anim\\image_pop_in.xml"
+    },
+    {
+        "merged": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo\\platforms\\tempPlugin\\cordova_plugin_telerik_imagepicker\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\kerezov\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\436d36c9c0c5a5ce4b99d32767ed690e\\res\\anim\\abc_fade_out.xml"
+    }
+]

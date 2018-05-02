@@ -1,0 +1,19 @@
+{
+    "cordova-nativescript-plugin": true,
+    "cordova-plugin-email-composer": true,
+    "cordova-plugin-telerik-imagepicker": true,
+    "nativescript-theme-core": true,
+    "tns-core-modules": true,
+    "fs-extra": true,
+    "mkdirp": true,
+    "nativescript-hook": true,
+    "xml-js": true,
+    "xmldom": true,
+    "xpath": true,
+    "tns-core-modules-widgets": true,
+    "graceful-fs": true,
+    "jsonfile": true,
+    "universalify": true,
+    "minimist": true,
+    "sax": true
+}

@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-nativescript-plugin@file:..\\cordova-nativescript-plugin",
+        "scope": null,
+        "escapedName": "cordova-nativescript-plugin",
+        "name": "cordova-nativescript-plugin",
+        "rawSpec": "file:..\\cordova-nativescript-plugin",
+        "spec": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\cordova-nativescript-plugin",
+        "type": "directory"
+      },
+      "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo"
+    ]
+  ],
+  "_from": "..\\cordova-nativescript-plugin",
+  "_id": "cordova-nativescript-plugin@2.1.10",
+  "_inCache": true,
+  "_location": "/cordova-nativescript-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-nativescript-plugin@file:..\\cordova-nativescript-plugin",
+    "scope": null,
+    "escapedName": "cordova-nativescript-plugin",
+    "name": "cordova-nativescript-plugin",
+    "rawSpec": "file:..\\cordova-nativescript-plugin",
+    "spec": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\cordova-nativescript-plugin",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "file:..\\cordova-nativescript-plugin",
+  "_shasum": "5bb248cb65d2f57018df0ad8f60012e8c705ce28",
+  "_shrinkwrap": null,
+  "_spec": "cordova-nativescript-plugin@file:..\\cordova-nativescript-plugin",
+  "_where": "C:\\Work\\nativescript-cli\\scratch\\cordova-nativescript-plugin\\demo",
+  "cordova_name": "ImagePicker",
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "mkdirp": "^0.5.1",
+    "nativescript-hook": "0.2.0",
+    "xml-js": "1.6.2",
+    "xmldom": "0.1.27",
+    "xpath": "0.0.27"
+  },
+  "description": "This plugin allows selection of multiple images from the camera roll / gallery in a phonegap app",
+  "devDependencies": {},
+  "issue": "",
+  "keywords": [],
+  "license": "MIT",
+  "name": "cordova-nativescript-plugin",
+  "nativescript": {
+    "platforms": {
+      "android": "4.0.0",
+      "ios": "4.0.0"
+    },
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "./lib/hooks/before-prepare.js",
+        "inject": true
+      }
+    ]
+  },
+  "optionalDependencies": {},
+  "readme": "cordova-imagePicker\r\n===================\r\n\r\nCordova Plugin For Multiple Image Selection - implemented for iOS and Android 4.0 and above.\r\n\r\n## Installing the plugin\r\n\r\nThe plugin conforms to the Cordova plugin specification, it can be installed\r\nusing the Cordova / Phonegap command line interface.\r\n\r\n    # without desc\r\n    phonegap plugin add https://github.com/Telerik-Verified-Plugins/ImagePicker.git\r\n    cordova plugin add https://github.com/Telerik-Verified-Plugins/ImagePicker.git\r\n    \r\n    # with desc\r\n    phonegap plugin add https://github.com/Telerik-Verified-Plugins/ImagePicker.git --variable PHOTO_LIBRARY_USAGE_DESCRIPTION=\"your usage message\"\r\n\r\n    cordova plugin add https://github.com/Telerik-Verified-Plugins/ImagePicker.git --variable PHOTO_LIBRARY_USAGE_DESCRIPTION=\"your usage message\"\r\n\r\n\r\n## Using the plugin\r\n\r\nThe plugin creates the object `window.imagePicker` with the method `getPictures(success, fail, options)`\r\n\r\nExample - Get Full Size Images (all default options):\r\n```javascript\r\nwindow.imagePicker.getPictures(\r\n    function(results) {\r\n        for (var i = 0; i < results.length; i++) {\r\n            console.log('Image URI: ' + results[i]);\r\n        }\r\n    }, function (error) {\r\n        console.log('Error: ' + error);\r\n    }\r\n);\r\n```\r\n\r\nExample - Get at most 10 images scaled to width of 800:\r\n```javascript\r\nwindow.imagePicker.getPictures(\r\n    function(results) {\r\n        for (var i = 0; i < results.length; i++) {\r\n            console.log('Image URI: ' + results[i]);\r\n        }\r\n    }, function (error) {\r\n        console.log('Error: ' + error);\r\n    }, {\r\n        maximumImagesCount: 10,\r\n        width: 800\r\n    }\r\n);\r\n```\r\n\r\n### Options\r\n\r\n    options = {\r\n        // Android only. Max images to be selected, defaults to 15. If this is set to 1, upon\r\n        // selection of a single image, the plugin will return it.\r\n        maximumImagesCount: int,\r\n        \r\n        // max width and height to allow the images to be.  Will keep aspect\r\n        // ratio no matter what.  So if both are 800, the returned image\r\n        // will be at most 800 pixels wide and 800 pixels tall.  If the width is\r\n        // 800 and height 0 the image will be 800 pixels wide if the source\r\n        // is at least that wide.\r\n        width: int,\r\n        height: int,\r\n        \r\n        // quality of resized image, defaults to 100\r\n        quality: int (0-100),\r\n\r\n        // output type, defaults to FILE_URIs.\r\n        // available options are \r\n        // window.imagePicker.OutputType.FILE_URI (0) or \r\n        // window.imagePicker.OutputType.BASE64_STRING (1)\r\n        outputType: int\r\n    };\r\n    \r\n### Note for Android Use\r\n\r\nWhen outputType is FILE_URI the plugin returns images that are stored in a temporary directory.  These images will often not be deleted automatically though.  The files should be moved or deleted after you get their filepaths in javascript. If Base64 Strings are being returned, there is nothing to clean up.\r\n\r\n## Android 6 (M) Permissions\r\nOn Android 6 you need to request permission to read external storage at runtime when targeting API level 23+.\r\nEven if the `uses-permission` tags for the Calendar are present in `AndroidManifest.xml`.\r\n\r\nNote that the `hasReadPermission` function will return true when:\r\n\r\n- You're running this on iOS, or\r\n- You're targeting an API level lower than 23, or\r\n- You're using Android < 6, or\r\n- You've already granted permission.\r\n\r\n```js\r\n  function hasReadPermission() {\r\n    window.imagePicker.hasReadPermission(\r\n      function(result) {\r\n        // if this is 'false' you probably want to call 'requestReadPermission' now\r\n        alert(result);\r\n      }\r\n    )\r\n  }\r\n\r\n  function requestReadPermission() {\r\n    // no callbacks required as this opens a popup which returns async\r\n    window.imagePicker.requestReadPermission();\r\n  }\r\n```\r\n\r\nNote that backward compatibility was added by checking for read permission automatically when `getPictures` is called.\r\nIf permission is needed the plugin will now show the permission request popup.\r\nThe user will then need to allow access and invoke the same method again after doing so.\r\n\r\n\r\n## Libraries used\r\n\r\n#### ELCImagePicker\r\n\r\nFor iOS this plugin uses the ELCImagePickerController, with slight modifications for the iOS image picker.  ELCImagePicker uses the MIT License which can be found in the file LICENSE.\r\n\r\nhttps://github.com/B-Sides/ELCImagePickerController\r\n\r\n#### MultiImageChooser\r\n\r\nFor Android this plugin uses MultiImageChooser, with modifications.  MultiImageChooser uses the BSD 2-Clause License which can be found in the file BSD_LICENSE.  Some code inside MultImageChooser is licensed under the Apache license which can be found in the file APACHE_LICENSE.\r\n\r\nhttps://github.com/derosa/MultiImageChooser\r\n\r\n#### FakeR\r\n\r\nCode(FakeR) was also taken from the phonegap BarCodeScanner plugin.  This code uses the MIT license.\r\n\r\nhttps://github.com/wildabeast/BarcodeScanner\r\n\r\n## License\r\n\r\nThe MIT License\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\ncopies of the Software, and to permit persons to whom the Software is\r\nfurnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in\r\nall copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\r\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\r\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\r\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\r\nTHE SOFTWARE.\r\n",
+  "readmeFilename": "README.md",
+  "repo": "https://github.com/Telerik-Verified-Plugins/ImagePicker",
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js",
+    "test": "exit 0"
+  },
+  "version": "2.1.10"
+}

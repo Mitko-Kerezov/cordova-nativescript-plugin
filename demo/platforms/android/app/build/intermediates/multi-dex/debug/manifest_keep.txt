@@ -1,0 +1,3 @@
+# Referenced at C:\Work\nativescript-cli\scratch\cordova-nativescript-plugin\demo\platforms\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:27
+-keep class com.tns.NativeScriptApplication { <init>(...); }
+
